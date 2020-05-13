@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        width: 500px;
+      }
+      img {
+        width: 450px;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://images.unsplash.com/photo-1588987333028-3e5d151e8ccc"
+        alt="Beach view"
+      />
+    </div>
+  </body>
+</html>

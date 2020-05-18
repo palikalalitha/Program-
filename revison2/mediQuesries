@@ -28,3 +28,30 @@
     </div>
   </body>
 </html>
+
+
+
+
+
+Media Quesrie2
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @media (max-width: 768px) {
+        .container {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">one</div>
+      <div class="item">two</div>
+    </div>
+  </body>
+</html>

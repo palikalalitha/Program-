@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        position: relative;
+      }
+      .div {
+        width: 200px;
+        height: 200px;
+      }
+      .div1 {
+        position: absolute;
+        background-color: red;
+        z-index: -1;
+      }
+      .div2 {
+        position: absolute;
+        background-color: green;
+        z-index: 0;
+      }
+      .div3 {
+        position: relative;
+        background-color: yellow;
+        z-index: 20;
+      }
+      .div4 {
+        position: absolute;
+        background-color: orange;
+        z-index: 10;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="div1 div">div1</div>
+      <div class="div2 div">div2</div>
+      <div class="div3 div">div3</div>
+      <div class="div4 div">div4</div>
+    </div>
+  </body>
+</html>

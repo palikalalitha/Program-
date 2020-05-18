@@ -1,0 +1,27 @@
+import React from "react";
+import { render } from "react-dom";
+import { observer } from "mobx-react";
+import { observable } from "mobx";
+
+@observer
+class Temperature extends React.Component {
+  @observable temperature = 0;
+
+  componentDidMount() {
+    this.temperature = 20;
+  }
+  handleChange = (e) => {
+    this.temperature = e.target.value;
+  };
+
+  render() {
+    return (
+      <fieldset>
+        <legend>Enter temperature in Celsius:</legend>
+        <input value={this.temperature} onChange={this.handleChange} />
+      </fieldset>
+    );
+  }
+}
+
+render(<Temperature />, document.getElementById("root"));

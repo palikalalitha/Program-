@@ -1,0 +1,32 @@
+import { observable } from "mobx";
+
+const persons = observable(new Map());
+
+const data = [
+  {
+    id: 1,
+    name: "Sri Potti Sriramulu",
+    city: "Nellore",
+    state: "Andhra Pradesh",
+  },
+  {
+    id: 1,
+    name: "Pingali Venkayya",
+    city: "Vijayawada",
+    state: "Andhra Pradesh",
+  },
+  {
+    id: 1,
+    name: "Hanuma Vihari",
+    city: "Kakinada",
+    state: "Andhra Pradesh",
+  },
+];
+
+data.forEach((person) => {
+  persons.set(person.id, person);
+});
+
+console.log(persons.size);
+persons.clear();
+console.log(persons.size);

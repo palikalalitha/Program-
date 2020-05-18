@@ -30,6 +30,39 @@
 </html>
 
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .container {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+      }
+      .item {
+        width: 400px;
+      }
+      @media (min-width: 768px) {
+        .container {
+          width: 900px;
+        }
+        .item {
+          width: 500px;
+          margin: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">one</div>
+      <div class="item">two</div>
+    </div>
+  </body>
+</html>
+
+
 
 
 
